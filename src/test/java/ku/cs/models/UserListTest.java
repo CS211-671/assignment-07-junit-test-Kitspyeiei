@@ -21,7 +21,7 @@ class UserListTest {
 
         // TODO: assert that UserList found User
         User user = new User("Four", "Four");
-        String expected = "One";
+        String expected = "Four";
         String actual = user.getUsername();
         assertEquals(expected, actual);
     }
@@ -55,7 +55,7 @@ class UserListTest {
         User actual = userList.login("One","One");
 
         // TODO: assert that User object is found
-        String expected = "One";
+        User expected = userList.findUserByUsername("One");
         assertEquals(expected, actual);
     }
 
